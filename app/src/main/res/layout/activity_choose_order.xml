@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/background_play">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Order Mode"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:fontFamily="@font/comic_sans_ms"
+        android:layout_marginBottom="30dp"/>
+    <Button
+        android:id="@+id/btnAscending"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Ascending Order"
+        android:textAllCaps="false"
+        android:padding="15dp"
+        android:textSize="30sp"
+        android:background="@drawable/ascending_button"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/btnDescending"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/descending_button"
+        android:padding="15dp"
+        android:text="Descending Order"
+        android:textAllCaps="false"
+        android:textSize="30sp" />
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:padding="15dp"
+        android:textSize="30sp"
+        android:background="@drawable/rounded_buttons"/>
+</LinearLayout>

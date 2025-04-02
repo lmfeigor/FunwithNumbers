@@ -1,0 +1,136 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+    <!-- Score and Attempts in one row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="Score: 0"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtAttempts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Attempts left: 3"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <!-- Answer container -->
+    <LinearLayout
+        android:id="@+id/answerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/box1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:text="" />
+        <TextView
+            android:id="@+id/box2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:text="" />
+        <TextView
+            android:id="@+id/box3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:text="" />
+        <TextView
+            android:id="@+id/box4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:text="" />
+    </LinearLayout>
+    <!-- Number Grid -->
+    <GridLayout
+        android:id="@+id/numberGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:gravity="center"
+        android:padding="10dp"/>
+    <!-- Result Image -->
+    <ImageView
+        android:id="@+id/imgResult"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"/>
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/btnCheckAnswer"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/game_buttons"
+        android:textAllCaps="false"
+        android:text="Check Answer"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/game_buttons"
+            android:textAllCaps="false"
+            android:text="Reset"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btnQuit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/game_buttons"
+            android:textAllCaps="false"
+            android:text="Quit"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
